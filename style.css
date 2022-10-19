@@ -1,0 +1,225 @@
+:root {
+    --dark-blue: #000b26;
+    --light-blue: #b9d4db;
+    --dark-orange: #e9765b;
+    --light-orange: #f2a490;
+    --dark-pink: #de5b6d;
+    --green: #18a558;
+    --ivory: #f9f7f4;
+    --black: #0096d7;
+    --dark-gray: #474747;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 9px "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR STYLE */
+a,
+.logo-container a,
+.right-nav a {
+    color: var(--black);
+    text-decoration: none !important;
+}
+
+a:hover,
+.logo-container a:hover,
+.right-nav a:hover {
+    color: var(--dark-gray) !important;
+    text-decoration: none;
+}
+
+.nav-container {
+    margin: auto;
+    padding: 0.5em 1em;
+    display: flex;
+    justify-content: center;
+    color: var(--black);
+}
+
+.search-container {
+    width: 70%;
+}
+.right-nav {
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.right-nav ul li {
+    display: inline;
+    padding: 0.3em;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transform: translateX(3em);
+}
+.logo-container a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo-title {
+    font-weight: 600;
+    margin: 4px 1px;
+}
+
+.logo-img {
+    max-height: 3em;
+}
+
+
+/* SEARCH BOX */
+
+.search-title {
+    font-size: 22px;
+    font-weight: 900;
+    text-align: center;
+    color: #ff8b88;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 24px;
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 18px;
+    color: #575756;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 95% center;
+    border-radius: 50px;
+    border: 1px solid #575756;
+    transition: all 250ms ease-in-out;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.search-input {
+    color: color(#575756 a(0.8));
+    letter-spacing: 1.5px;
+}
+
+.search-input:hover,
+.search-input:focus {
+    padding: 12px 0;
+    outline: 0;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #575756;
+    border-radius: 0;
+    background-position: 100% center;
+}
+
+/* HOME PAGE */
+
+.circle-img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+}
+.circle-img:hover {
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    box-shadow: 5px 5px 5px var(--dark-gray);
+}
+
+.fa-chevron-circle-right {
+    font-size: 50px;
+    color: var(--dark-blue);
+    margin-top: 1.5em;
+    border-radius: 55%;
+    box-shadow: 5px 5px 5px var(--dark-gray);
+    transition: all 0.2s linear;
+}
+
+.fa-chevron-circle-right:hover {
+    transform: scale(1.4);
+}
+
+hr.gradient-style {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0)
+    );
+    margin: 1em auto;
+}
+/* FOOTER */
+
+ul {
+    list-style: none;
+}
+
+.white-links {
+    margin-left: 2.5em;
+}
+.white-links a {
+    font-size: 14px;
+    color: var(--ivory);
+    margin-right: 1em;
+}
+.white-links a:hover {
+    color: var(--light-blue) !important;
+}
+.footer-title {
+    font-weight: 300;
+    color: whitesmoke;
+    text-transform: uppercase;
+    margin-bottom: 0.3em;
+}
+#contact {
+    text-align: left;
+    vertical-align: middle;
+    align-items: center;
+    color: var(--ivory);
+    background-color: var(--black);
+    padding: 1em 1em 0.2em 1em;
+    border-bottom: 5px var(--dark-blue) solid;
+}
+.bottom-footer {
+    font-size: 14px;
+    padding: 1em 1.5em;
+    color: var(--ivory);
+    background-color: #1a1a1a;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 2.5rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
